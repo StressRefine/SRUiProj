@@ -1,0 +1,20 @@
+saveBreakout  //extract a breakout model from the input mesh, centered at point of max stress in model
+saveBreakout node n  //extract a breakout model from the input mesh, centered at node with id n
+stress_conversion 1E-06 Mpa(N/mm^2) //conversion from Pa to the output stress format. Name of the output format
+length_conversion 1000  mm //conversion from m to the output length/displacement format. Name of the output format
+needSoftSprings //use soft springs for stabilizing a poorly constrained model, e.g model is constrained vertically but my slide horizontally
+                //only use this if the model is known to be in equilibrium. 
+PMAX n //upper limit to p order in adaptivity (default 8). numbers higher than 8 are ignored
+MAXITERATIONS n //number ofiterations in adaptivity. default 3. minimum 1 
+uniformP //use uniform p-refinement instead of adaptive
+ERRORTOL //error tolerance percentage for adaptivity, default 5
+NOSACRIFICIAL //suppress automatic detection of sacrifical elements at singularities. not recommended unless
+	      //you are intentionally studying the stress at a singulaity
+econSolve  //economy solver for large models. Sets MAXITERATIONS to 2 and PMAX to 5
+outputF06 //output stress in nastran ascii (.f06) format in addition to .frd format for Calculiix postprocessor
+
+
+
+
+
+
