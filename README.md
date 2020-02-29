@@ -9,7 +9,7 @@
  Now hit build to compile. A subfolder is created bin/debug or bin/release depending on the configuration. Inside that folder
  will be the executable SRui.exe
  
- Note: there is no linux version of SRui because it is written C#, which is windows-specifice. It would be relatviely simple to recreate 
+ Note: there is no linux version of SRui because it is written C#, which is windows-specifice. It would be relatively simple to recreate 
  it in a portable language like Java, to which C# is quite similar.
  To run stressRefine under linux without a UI I recommend the following:
  
