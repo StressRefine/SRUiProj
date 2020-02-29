@@ -12,7 +12,8 @@
  Note: there is no linux version of SRui because it is written C#, which is windows-specifice. It would be relatviely simple to recreate 
  it in a portable language like Java, to which C# is quite similar.
  To run stressRefine under linux without a UI I recommend the following:
- 1. Place the executable bdfTranslate.exe, and whichever engine executable you are using (the simpler one in SRwithMklProj or the full version in fullEngine) in a working folder.
+ 
+ Place the executable bdfTranslate.exe, and whichever engine executable you are using (the simpler one in SRwithMklProj or the full version in fullEngine) in a working folder.
  That folder must contain 2 files translateCmd.txt, and ModelFileName.txt.
  TranslateCmd.txt contains 2 lines:
  1. The full path to the nastran input file (.bdf or .dat) to be translated
