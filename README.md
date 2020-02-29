@@ -15,9 +15,11 @@
  
  Place the executable bdfTranslate.exe, and whichever engine executable you are using (the simpler one in SRwithMklProj or the full version in fullEngine) in a working folder.
  That folder must contain 2 files translateCmd.txt, and ModelFileName.txt.
+ 
  TranslateCmd.txt contains 2 lines:
  1. The full path to the nastran input file (.bdf or .dat) to be translated
  2. The full path to th folder that will contain the .msh input file for the stressRefine engine
+ 
  Modefilename contains a single line which is the path to the input folder, the same as line 2 above.
  run BdfTranslate to create the .msh input file, then run SRwithMkl.exe to solve.
  The BdfTranslate step can be skipped if you are rerunning a previously created .msh file.
